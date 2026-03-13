@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gratia Cookies - Crunchy. Cozy. Irresistible</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--NAVIGATION  -->
+    <nav>
+      <div class="nav-logo">Gratia <span>Cookies</span></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <button class="nav-cart" id="cartBin">🛒Cart (<span id="cartCount">0</span>)</button>
+    </nav>
+
+    <!-- BREAD CRUMB -->
+    <div class="breadcrumb">Home / Shop / Cookies / <span>Gratia Cookies</span></div>
+
+    <!-- PRODUCT SECTION -->
+    <section class="product-section">
+      <!-- GALLERY -->
+      <div class="gallery">
+        <div class="main-image-wrap">
+          <div class="flavour-badge" id="flavourBadge">🌾 Original</div>
+          <div class="fresh-badge">✨ Freshly Made</div>
+          <div class="product-illustration" id="mainEmoji">🍪</div>
+        </div>
+        <div class="thumbnails">
+          <div class="thumb active" data-flavour="original" data-emoji="🍪">🍪</div>
+          <div class="thumb" data-="chocolate" data-emoji="🍫">🍫</div>
+          <div class="thumb" data-flavour="coconut" data-emoji="🥥">🥥</div>
+          <div class="thumb" data-flavour="bundle" data-emoji="📦">📦</div>
+        </div>
+      </div>
+
+      <!-- PRODUCT Info -->
+      <div class="product-info">
+        <div class="product-tag">🆖 Proudly Nigerian Snack</div>
+        <h1 class="product-name">
+          Gratia <br />
+          <span>Cookies</span>
+        </h1>
+        <p class="product-tagline">
+          Crunchy, golden-brown, and soft-baked made with love - the snack that takes you straight
+          back to grandma's kitchen. ✨
+        </p>
+
+        <div class="rating-row">
+          <span class="stars">⭐⭐⭐⭐⭐</span>
+          <span class="rating-num">4.9 (238 reviews)</span>
+        </div>
+
+        <!-- FLAVOUR SELECTOR -->
+        <p class="selector-label">Flavour - <span id="selectedFlavour">Original</span></p>
+
+        <div class="flavour-options">
+          <button class="flavour-btn active" data-flavour="Original" data-emoji="🍪">
+            🌾Original
+          </button>
+          <button class="flavour-btn" data-flavour="chocolate" data-emoji="🍫">🍫 Chocolate</button>
+          <button class="flavour-btn" data-flavour="coconut" data-emoji="🥥">🥥Coconut</button>
+        </div>
+
+        <!-- Pack Size -->
+        <p class="selector-label">Pack Size -<span id="selectedPack">30g</span></p>
+        <div class="pack-options">
+          <div
+            class="pack-btn active"
+            data-size="30g"
+            data-name="Small but Mighty"
+            data-price="₦750"
+          >
+            <div class="pack-size">30g</div>
+            <div class="pack-name">Small but Mighty</div>
+            <div class="pack-price">₦750</div>
+          </div>
+          <div class="pack-btn" data-size="45g" data-name="Balanced Babe" data-price="₦750">
+            <div class="pack-size">45g</div>
+            <div class="pack-name">The Balanced Babe</div>
+            <div class="pack-price">₦1,500</div>
+          </div>
+          <div class="pack-btn" data-size="1kg" data-name="Big Energy" data-price="₦1,500">
+            <div class="pack-size">1kg</div>
+            <div class="pack-name">Big Energy</div>
+            <div class="pack-price">₦2,500</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quantity Selector -->
+      <div class="qty-row">
+        <p class="selector-label">Qty</p>
+        <div class="qty-control">
+          <button class="qty-btn" data-delta="-1">-</button>
+          <span class="qty-num" id="qtyNum">1</span>
+          <button class="qty-btn" data-delta="1">+</button>
+        </div>
+        <div class="stock-badge">✅ In Stock</div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-row">
+        <button class="btn-add-cart" id="addCartBtn">🛒 Add to Cart</button>
+        <button class="btn-buy-now" id="buyNow">⚡Buy now</button>
+      </div>
+
+      <!-- Perks -->
+      <div class="perks">
+        <div class="perk"><span class="perk-icon">🚚</span>Free Delivery Over 5,000</div>
+        <div class="perk"><span class="perk-icon">🔒</span>Secure checkout</div>
+        <div class="perk"><span class="perk-icon">🍃</span>No preservatives</div>
+        <div class="perk"><span class="perk-icon">🧡</span>Handmade daily</div>
+      </div>
+    </section>
+
+    <!-- TABS -->
+    <section class="tabs-section reveal">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="description">Description</button>
+        <button class="tab-btn" data-tab="nutrition">Nutrition</button>
+        <button class="tab-btn" data-tab="reviews">Reviews (238)</button>
+      </div>
+
+      <!-- Description -->
+      <div class="tab-content active" id="tab-description">
+        <div class="desc-grid">
+          <div class="desc-text">
+            <h3>The Snack that started it all 🍪</h3>
+            <p>
+              Gratia Cookies are handcrafted using a cherished family recipe passed down through
+              generations. Every batch is made fresh with premium flour, real butter, and just the
+              right pinch of nutmeg - the way it's always been done.
+            </p>
+            <p>
+              Watching you relish in childhood memories that our cookies brings has had us
+              reminiscing about special memories of our own.
+            </p>
+            <p>
+              Whether you're curled up with a movie, sharing with friends at a gathering, or
+              sneaking a handful at your desk - Gratia hits different. Crunchy, golden-brown, and
+              completely irresistible.
+            </p>
+            <p>
+              No artificial flavours. No preservatives. Just pure, honest, delicious cookies - the
+              way grandma made it. 🤎
+            </p>
+          </div>
+          <div class="ingredients">
+            <h4>🌾 Ingredients</h4>
+            <div class="ingredient-lists">
+              <span class="ingredient-tag">Wheat Flour</span>
+              <span class="ingredient-tag">Real Butter</span>
+              <span class="ingredient-tag">Margarine</span>
+              <span class="ingredient-tag">Eggs</span>
+              <span class="ingredient-tag">Sugar</span>
+              <span class="ingredient-tag">Nutmeg Powder</span>
+              <span class="ingredient-tag">Coconut Milk</span>
+              <span class="ingredient-tag">Condensed Milk</span>
+              <span class="ingredient-tag">Vanilla</span>
+              <span class="ingredient-tag">Vegetable Oil</span>
+              <span class="ingredient-tag">Salt</span>
+              <span class="ingredient-tag">Cinnamon Powder</span>
+              <span class="ingredient-tag">Water</span>
+            </div>
+            <br />
+            <p>⚠️ Contains Gluten, Coconut, Eggs and Milk. Made in a facility that handles nuts.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nutrition -->
+      <div class="tab-content" id="tab-nutrition">
+        <div class="nutrition-table">
+          <div class="nutrition-header">Nutrition Facts - per 30g</div>
+          <div class="nutrition-row">
+            <span>Calories</span><span class="nutrition-val">148 kcal</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Total Fat</span><span class="nutrition-val">28.2g</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Saturated Fat</span><span class="nutrition-val">5.3g</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Protein</span><span class="nutrition-val">17g</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Total Carbohydrates</span><span class="nutrition-val">17g</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Sodium</span><span class="nutrition-val">176mg</span>
+          </div>
+          <div class="nutrition-row">
+            <span>Sugar</span><span class="nutrition-val">14.2g</span>
+          </div>
+          <div class="nutrition-row"><span>Iron</span><span class="nutrition-val">5.3g</span></div>
+          <div class="nutrition-row">
+            <span>Dietary Fibre</span><span class="nutrition-val">2g</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="tab-content" id="tab-reviews">
+        <div class="reviews-header">
+          <div class="overall-score">
+            <div class="big-score">4.9</div>
+            <div class="big-stars">⭐⭐⭐⭐⭐</div>
+            <div class="score-count">238 reviews</div>
+          </div>
+          <div class="rating-bars">
+            <div class="rating-bar-row">
+              <span class="rb-label">5⭐</span>
+              <div class="rb-track"><div class="rb-fill" style="width: 70%"></div></div>
+              <span class="rb-count">169</span>
+            </div>
+            <div class="rating-bar-row">
+              <span class="rb-label">4⭐</span>
+              <div class="rb-track"><div class="rb-fill" style="width: 20%"></div></div>
+              <span class="rb-count">59</span>
+            </div>
+            <div class="rating-bar-row">
+              <span class="rb-label">3⭐</span>
+              <div class="rb-track"><div class="rb-fill" style="width: 12%"></div></div>
+              <span class="rb-count">27</span>
+            </div>
+            <div class="rating-bar-row">
+              <span class="rb-label">2⭐</span>
+              <div class="rb-track"><div class="rb-fill" style="width: 7%"></div></div>
+              <span class="rb-count">12</span>
+            </div>
+            <div class="rating-bar-row">
+              <span class="rb-label">1⭐</span>
+              <div class="rb-track"><div class="rb-fill" style="width: 1%"></div></div>
+              <span class="rb-count">5</span>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-top">
+              <div class="review-info">
+                <div class="reviewer-avatar">🥰</div>
+                <div>
+                  <div class="reviewer-name">Jide Emmanuel</div>
+                  <div class="reviewer-date">March 2026</div>
+                </div>
+              </div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-text">
+              "This cookies is dangerously addictive. I ordered the 1kg Big Energy Pack thinking it
+              would last a week... It lasted 1 day. No regrets whatsoever!"
+            </p>
+            <span class="review-verified">✅ Verified Purchase</span>
+          </div>
+          <div class="review-card">
+            <div class="review-top">
+              <div class="review-info">
+                <div class="reviewer-avatar">🤩</div>
+                <div>
+                  <div class="reviewer-name">Ajibawo Timi</div>
+                  <div class="reviewer-date">Feburary 2026</div>
+                </div>
+              </div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-text">
+              "The coconut flavour is absolutely unreal. Tastes exactly like what my mum used to
+              make.GRAHTIYAA just gets it- no shortcuts, no fake flavours. Pure love in every bite."
+            </p>
+            <span class="review-verified">✅ Verified Purchase</span>
+          </div>
+          <div class="review-card">
+            <div class="review-top">
+              <div class="review-info">
+                <div class="reviewer-avatar">🥰</div>
+                <div>
+                  <div class="reviewer-name">Fatima Taiwo</div>
+                  <div class="reviewer-date">January 2026</div>
+                </div>
+              </div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-text">
+              "Ordered for my son's birthday party and everyone was asking where I got it them from.
+              The packaging is so cute and the cookies tasted fresh and crunchy. Will definitely
+              reorder!"
+            </p>
+            <span class="review-verified">✅ Verified Purchase</span>
+          </div>
+          <div class="review-card">
+            <div class="review-top">
+              <div class="review-info">
+                <div class="reviewer-avatar">🙌</div>
+                <div>
+                  <div class="reviewer-name">Faruq Adekunle</div>
+                  <div class="reviewer-date">December 2025</div>
+                </div>
+              </div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="review-text">
+              "I travel a lot for work and I always pack a few bags of Gratia. The 30g Small but
+              Mighty is perfect for a quick snack on the go. Chocolate flavour is my personal fave!"
+            </p>
+            <span class="review-verified">✅ Verified Purchase</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="related-section reveal">
+      <h2>You might also love 🤎</h2>
+      <div class="related-grid">
+        <div class="related-card" data-toast="🛒 Added Doughnut to Cart!">
+          <span class="related-emoji">🍩</span>
+          <div class="related-name">Gratia Doughnut</div>
+          <div class="related-price">From ₦1,200</div>
+        </div>
+        <div class="related-card" data-toast="🛒 Added Burger to Cart!">
+          <span class="related-emoji">🍔</span>
+          <div class="related-name">Gratia Burger</div>
+          <div class="related-price">From ₦6,550</div>
+        </div>
+        <div class="related-card" data-toast="🛒 Added Buns to Cart!">
+          <span class="related-emoji">🎁</span>
+          <div class="related-name">Gratia Snack Gift Box</div>
+          <div class="related-price">From ₦2,500</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">Gratia <span>Cookies</span></div>
+      <p>Handmade with 🧡 in Nigeria</p>
+      <p>© 2025 Gratia Foods. All rights reserved.</p>
+    </footer>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">🛒 <span id="toastMsg">Added to Cart!</span></div>
+    <script src="script.js"></script>
+  </body>
+</html>
