@@ -4,7 +4,7 @@ A warm, cozy e-commerce product page for a Nigerian snack brand — built with p
 https://gratia-cookies.vercel.app/
 
 PREVEIW
-
+Gratia Preview.png
 
 ✨ Features
 
