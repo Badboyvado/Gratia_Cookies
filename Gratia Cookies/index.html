@@ -343,7 +343,33 @@
       <p>Handmade with 🧡 in Nigeria</p>
       <p>© 2025 Gratia Foods. All rights reserved.</p>
     </footer>
+    <!--CART DRAWER  OVERLAY-->
+    <div class="cart-overlay" id="cartOverlay"></div>
 
+    <!--CART DRAWER  -->
+    <div class="cart-drawer" id="cartDrawer">
+      <div  class="cart-drawer-header">
+        <h2 class="cart-drawer-title">🛒 Your Cart <span class="cart-badge"  id="drawerCartCount">0</span></h2>
+        <button class="cart-close-btn" id="cartCloseBtn">2715</button>
+      </div>
+      <div class="cart-drawer-body" id="cartBody">
+        <div class="cart-empty" id="cartEmpty">
+          <div class="cart-empty-icon">🛍️FE0F</div>
+          <p class="cart-empty-title">Your cart is empty</p>
+          <p class="cart-empty-sub">Add some delicious cookies to get started!</p>
+        </div>
+        <div class="cart-items-list" id="cartItemsList"></div>
+      </div>
+      <div class="cart-drawer-footer" id="cartFooter">
+        <div class="cart-subtotal"><span>Subtotal</span>
+        <span class="cart-subtotal-amount" id="cartSubtotal">20a60</span>
+        </div>
+        <p class="cart-delivery-note">🚚 Free delivery on orders over 20a65,000</p>
+        <button class="btn-checkout">26a1 Checkout</button>
+        <button class="btn-contiune-shopping" id="continueShoopingBtn">2190 Contiune Shopping</button>
+      </div>
+    </div>
+    
     <!-- TOAST -->
     <div class="toast" id="toast">🛒 <span id="toastMsg">Added to Cart!</span></div>
     <script src="script.js"></script>
