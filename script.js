@@ -1,7 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
   // STATE
   let qty = 1;
-  let cartItems = [];
+  let cartItems = [
+    {
+      emoji: "🍪",
+      name: "Gratia Cookies",
+      meta: "Original -30g",
+      flavour: "Original",
+      price: 750,
+      qty: 1,
+    },
+    {
+      emoji: "🍫",
+      name: "Gratia Cookies",
+      meta: "Chocolate -45g",
+      flavour: "Chocolate",
+      price: 1500,
+      qty: 1,
+    },
+    {
+      emoji: "🥥",
+      name: "Gratia Cookies",
+      meta: "Coconut -1kg",
+      flavour: "Coconut",
+      price: 2500,
+      qty: 1,
+    },
+  ];
 
   const priceMap = {
     "30g": 750,
